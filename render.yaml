@@ -1,4 +1,3 @@
-cat > render.yaml << 'EOF'
 services:
   - type: web
     name: carbon-footprint-api
@@ -13,4 +12,3 @@ services:
         value: http://localhost:5173
       - key: DATABASE_URL
         value: sqlite:///./carbon_app.db
-EOF
