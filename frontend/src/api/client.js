@@ -6,7 +6,7 @@
  * default for a footprint tracker that may be used on shared devices.
  * (Swap to localStorage if "remember me across sessions" is desired.)
  */
-const BASE_URL = '/api'
+const BASE_URL = import.meta.env.VITE_API_URL || '/api'
 const TOKEN_KEY = 'carbon_app_token'
 
 export function getToken() {
